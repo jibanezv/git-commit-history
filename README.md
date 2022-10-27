@@ -8,6 +8,7 @@ El objetivo de esta prueba será crear una aplicación que muestre el historial 
 Deberá registrarse para obtener una cuenta gratuita de GitHub si aún no tiene una, luego cree un repositorio público para almacenar su trabajo para que podamos verlo y revisarlo. Puede encontrar documentación sobre la API de GitHub aquí: https://developer.github.com/v3/.
 
 Elija las tecnologías frontend y backend que mejor se adapten a su conjunto de habilidades para construir la solución, marcos Angular, Vue o React o incluso Flutter, Swift o Android, si le gusta el desarrollo móvil. Combínalos con NodeJS, Python o .Net para crear la columna vertebral perfecta.
+
 Utilice todas las tecnologías y habilidades que desee mostrar, pero no olvide que debe mostrar en la interfaz de usuario los métodos que se trabajaron en el backend.
 
 Requisitos
