@@ -1,0 +1,186 @@
+body {
+  text-align: center;
+  margin-left: 0px auto;
+  padding: 0px;
+  font-family: "Segoe UI", Roboto, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+#contenedor {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+}
+
+#lateral {
+  width: 35%;
+  float: left;
+  margin-left: 25px;
+}
+
+#principal {
+  width: 55%;
+  float: right;
+  height: 100%;
+  border-radius: 15px;
+  margin-right: 25px;
+}
+/* Para limpiar los floats */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#header {
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  border-top: 5px solid #ff0000;
+  margin: 0px auto;
+}
+
+.center {
+  margin: 0px auto;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+#logo {
+  margin-left: 25px;
+  width: 30%;
+  font-size: 30px;
+  float: left;
+  margin-top: 35px;
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 60px;
+  margin-top: -9px;
+  margin-right: 5px;
+  animation: latir infinite 2s linear;
+}
+
+@keyframes latir {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.02, 1.02);
+  }
+
+  55% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+#brand {
+  display: block;
+  margin: 0px;
+  float: left;
+}
+
+#content {
+  width: 100%;
+  float: left;
+  min-height: 650px;
+}
+
+#footer {
+  background: #f7f7f7;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  color: #444;
+}
+
+#footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.article-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.article-item .image-wrap {
+  width: 60px;
+  height: 30px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+}
+
+.article-item .image-wrap img {
+  height: 100%;
+  text-align: center;
+}
+
+.article-item h2 {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
+.article-item .date {
+  display: block;
+  width: 100%;
+  color: rgb(118, 118, 118);
+}
+
+
+
+/* RESPONSIVE */
+/* Desde la anchura 0px hasta 1488 de pantalla */
+@media (max-width: 1245px) {
+  /* Se ejecutaran estos estilos */
+  .center {
+    width: 85%;
+  }
+
+  #logo {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  #content {
+    width: 100%;
+    clear: both;
+  }
+
+  #lateral {
+    width: 35%;
+    float: left;
+    margin-left: 0px;
+  }
+
+  #principal {
+    clear: both;
+    display: flow-root;
+    float: none;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+}
