@@ -33,6 +33,16 @@ h2 {
   font-variant: small-caps;
 }
 
+a {
+  color: #dc3545;
+  text-decoration: unset;
+}
+
+a :hover {
+  color: #b52e31;
+  text-decoration: unset;
+}
+
 #contenedor {
   text-align: left;
   width: 100%;

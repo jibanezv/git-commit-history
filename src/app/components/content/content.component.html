@@ -25,8 +25,8 @@
           <li><strong>Login: </strong>{{info.author.login}}</li>
           <li><strong>ID: </strong>{{info.author.id}}</li>
           <li><strong>Node ID: </strong>{{info.author.node_id}}</li>
-          <li><strong>Avatar URL: </strong>{{info.author.avatar_url}}</li>
-          <li><strong>HTML URL: </strong>{{info.author.html_url}}</li>
+          <li><strong>Avatar URL: </strong><a href="{{info.author.avatar_url}}">{{info.author.avatar_url}}</a></li>
+          <li><strong>HTML URL: </strong><a href="{{info.author.html_url}}">{{info.author.html_url}}</a></li>
         </ul>
       </div>
       <div>
@@ -41,7 +41,7 @@
         <h4><strong>Tree</strong></h4>
         <ul>
           <li><strong>Sha: </strong>{{info.commit.tree.sha}}</li>
-          <li><strong>URL: </strong>{{info.commit.tree.url}}</li>
+          <li><strong>URL: </strong><a href="{{info.commit.tree.url}}" >{{info.commit.tree.url}}</a></li>
         </ul>
       </div>
       <p><strong>Comment Count: </strong>{{info.commit.comment_count}}</p>
@@ -54,7 +54,7 @@
           <li><strong>Payload: </strong>{{info.commit.verification.payload}}</li>
         </ul>
       </div>
-      <p><strong>HTML URL: </strong><a href="{{info.html_url}}" >View on Github</a></p>
+      <p><strong><a href="{{info.html_url}}" >View on Github</a></strong></p>
     </div>
     <div class="clearfix"></div>
   </div>
