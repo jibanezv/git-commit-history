@@ -2,7 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
+## First Steps
+
+To execute this project, please install NODE JS: https://nodejs.org/en/download/
+To debug or edit, use some code editor like VS Code: https://code.visualstudio.com/download
+
+Installing Angular CLI
+Major versions of Angular CLI follow the supported major version of Angular, but minor versions can be released separately.
+
+Install the CLI using the npm package manager:
+
+Run `npm install -g @angular/cli`
+
 ## Development server
+
+Run `npm install` to install modules required.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
