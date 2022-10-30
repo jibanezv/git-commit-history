@@ -22,6 +22,11 @@ button {
   margin-top: 12px;
 }
 
+strong {
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
 #contenedor {
   text-align: left;
   width: 100%;
