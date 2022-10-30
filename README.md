@@ -7,11 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 To execute this project, please install NODE JS: https://nodejs.org/en/download/
 To debug or edit, use some code editor like VS Code: https://code.visualstudio.com/download
 
+Once NodeJS is installed. You must open CMD or command line and execute the following instructions.
+
 Installing Angular CLI
-Major versions of Angular CLI follow the supported major version of Angular, but minor versions can be released separately.
-
 Install the CLI using the npm package manager:
-
 Run `npm install -g @angular/cli`
 
 ## Development server
