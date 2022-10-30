@@ -1,6 +1,6 @@
 <div id="contenedor" class="clearfix">
   <div id="lateral">
-    <h1>List</h1>
+    <h2>List</h2>
     <div *ngFor="let data of commits" class="article-item">
       <div>
         <img src="../../../assets/images/commit.png" alt="commit-img" class="image-wrap" />
@@ -11,50 +11,52 @@
     </div>
   </div>
 
-  <div #principal id="principal">
-    <h1>Detail</h1>
-    <p><strong>Sha: </strong>{{info.sha}}</p>
-    <p><strong>Node ID: </strong>{{info.node_id}}</p>
-    <div>
-      <h4><strong>Author</strong></h4>
-      <ul>
-        <li><strong>Name: </strong>{{info.commit.author.name}}</li>
-        <li><strong>e-Mail: </strong>{{info.commit.author.email}}</li>
-        <li><strong>Date: </strong>{{info.commit.author.date}}</li>
-        <li><strong>Login: </strong>{{info.author.login}}</li>
-        <li><strong>ID: </strong>{{info.author.id}}</li>
-        <li><strong>Node ID: </strong>{{info.author.node_id}}</li>
-        <li><strong>Avatar URL: </strong>{{info.author.avatar_url}}</li>
-        <li><strong>HTML URL: </strong>{{info.author.html_url}}</li>
-      </ul>
+  <div class="detail-container">
+    <div #principal id="principal" *ngIf="element == true">
+      <h2>Detail</h2>
+      <p><strong>Sha: </strong>{{info.sha}}</p>
+      <p><strong>Node ID: </strong>{{info.node_id}}</p>
+      <div>
+        <h4><strong>Author</strong></h4>
+        <ul>
+          <li><strong>Name: </strong>{{info.commit.author.name}}</li>
+          <li><strong>e-Mail: </strong>{{info.commit.author.email}}</li>
+          <li><strong>Date: </strong>{{info.commit.author.date}}</li>
+          <li><strong>Login: </strong>{{info.author.login}}</li>
+          <li><strong>ID: </strong>{{info.author.id}}</li>
+          <li><strong>Node ID: </strong>{{info.author.node_id}}</li>
+          <li><strong>Avatar URL: </strong>{{info.author.avatar_url}}</li>
+          <li><strong>HTML URL: </strong>{{info.author.html_url}}</li>
+        </ul>
+      </div>
+      <div>
+        <h4><strong>Commiter</strong></h4>
+        <ul>
+          <li><strong>Name: </strong>{{info.commit.committer.name}}</li>
+          <li><strong>e-Mail: </strong>{{info.commit.committer.email}}</li>
+          <li><strong>Date: </strong>{{info.commit.committer.date}}</li>
+        </ul>
+      </div>
+      <p><strong>Message: </strong>{{info.commit.message}}</p>
+      <div>
+        <h4><strong>Tree</strong></h4>
+        <ul>
+          <li><strong>Sha: </strong>{{info.commit.tree.sha}}</li>
+          <li><strong>URL: </strong>{{info.commit.tree.url}}</li>
+        </ul>
+      </div>
+      <p><strong>Comment Count: </strong>{{info.commit.comment_count}}</p>
+      <div>
+        <h4><strong>Verification</strong></h4>
+        <ul>
+          <li><strong>Verified: </strong>{{info.commit.verification.verified}}</li>
+          <li><strong>Reason: </strong>{{info.commit.verification.reason}}</li>
+          <li><strong>Signature: </strong>{{info.commit.verification.signature}}</li>
+          <li><strong>Payload: </strong>{{info.commit.verification.payload}}</li>
+        </ul>
+      </div>
+      <p><strong>HTML URL: </strong>{{info.html_url}}</p>
     </div>
-    <div>
-      <h4><strong>Commiter</strong></h4>
-      <ul>
-        <li><strong>Name: </strong>{{info.commit.committer.name}}</li>
-        <li><strong>e-Mail: </strong>{{info.commit.committer.email}}</li>
-        <li><strong>Date: </strong>{{info.commit.committer.date}}</li>
-      </ul>
-    </div>
-    <p><strong>Message: </strong>{{info.commit.message}}</p>
-    <div>
-      <h4><strong>Tree</strong></h4>
-      <ul>
-        <li><strong>Sha: </strong>{{info.commit.tree.sha}}</li>
-        <li><strong>URL: </strong>{{info.commit.tree.url}}</li>
-      </ul>
-    </div>
-    <p><strong>Comment Count: </strong>{{info.commit.comment_count}}</p>
-    <div>
-      <h4><strong>Verification</strong></h4>
-      <ul>
-        <li><strong>Verified: </strong>{{info.commit.verification.verified}}</li>
-        <li><strong>Reason: </strong>{{info.commit.verification.reason}}</li>
-        <li><strong>Signature: </strong>{{info.commit.verification.signature}}</li>
-        <li><strong>Payload: </strong>{{info.commit.verification.payload}}</li>
-      </ul>
-    </div>
-    <p><strong>HTML URL: </strong>{{info.html_url}}</p>
+    <div class="clearfix"></div>
   </div>
-  <div class="clearfix"></div>
 </div>

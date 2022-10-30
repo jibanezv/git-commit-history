@@ -8,6 +8,20 @@ body {
   -moz-osx-font-smoothing: antialiased;
 }
 
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+button {
+  border-radius: 10px;
+  border: solid 0.5px #767676;
+  margin-top: 12px;
+}
+
 #contenedor {
   text-align: left;
   width: 100%;
@@ -17,15 +31,20 @@ body {
 #lateral {
   width: 35%;
   float: left;
-  margin-left: 25px;
+  padding: 40px;
 }
 
 #principal {
-  width: 55%;
+  width: 60%;
   float: right;
   height: 100%;
   border-radius: 15px;
-  margin-right: 25px;
+  padding: 40px;
+  background-color: #f3e0e0 !important;
+  border-left: 6px solid #e23237 !important;
+  border-right: 6px solid #b52e31;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 /* Para limpiar los floats */
 .clearfix:after {
@@ -102,8 +121,10 @@ body {
   background: #f7f7f7;
   width: 100%;
   height: 70px;
-  line-height: 70px;
+  line-height: 65px;
   color: #444;
+  border-bottom: 5px solid red;
+  border-top: 1px solid #ccc;
 }
 
 #footer p {
@@ -140,6 +161,8 @@ body {
   padding: 0px;
   margin: 0px;
   margin-bottom: 7px;
+  text-shadow: 0 0 black;
+  font-variant: all-petite-caps;
 }
 
 .article-item .date {
@@ -148,14 +171,17 @@ body {
   color: rgb(118, 118, 118);
 }
 
-
-
-/* RESPONSIVE */
-/* Desde la anchura 0px hasta 1488 de pantalla */
 @media (max-width: 1245px) {
-  /* Se ejecutaran estos estilos */
-  .center {
-    width: 85%;
+  #contenedor {
+    text-align: start;
+    width: 100%;
+    margin: auto;
+  }
+
+  #brand {
+    display: block;
+    margin: 0px auto;
+    float: none;
   }
 
   #logo {
@@ -165,22 +191,72 @@ body {
     margin-top: 20px;
   }
 
+  #logo img {
+    display: block;
+    height: 60px;
+    animation: latir infinite 2s linear;
+    margin: 0px auto;
+    float: none;
+  }
+
+  #header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 5px solid #ff0000;
+    margin: 0px auto;
+    height: 150px;
+  }
+
   #content {
     width: 100%;
     clear: both;
   }
 
   #lateral {
-    width: 35%;
-    float: left;
+    width: 100%;
+    float: none;
     margin-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
   }
 
   #principal {
     clear: both;
     display: flow-root;
     float: none;
-    width: 60%;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 50px;
+    line-break: anywhere;
+  }
+
+  .center {
+    width: 85%;
+  }
+
+  .article-item .image-wrap {
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    float: none;
+    margin-right: 0px;
+  }
+
+  .article-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding: 10px;
+  }
+
+  dl,
+  ol,
+  ul {
+    margin: 0px auto;
+    margin-bottom: 1rem;
+    list-style: none;
   }
 }

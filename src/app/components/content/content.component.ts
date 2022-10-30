@@ -9,6 +9,7 @@ import { commit } from 'src/app/models/model.commit';
 export class ContentComponent implements OnInit {
   public info = commit;
   public commits: Array<any> = [];
+  element = false;
   constructor(private _getCommitService: GetCommitsService) {}
   ngOnInit() {
     this._getCommitService.getCommits().subscribe((response) => {
@@ -110,6 +111,7 @@ export class ContentComponent implements OnInit {
     this.info.author.node_id = data.author.node_id;
     this.info.author.avatar_url = data.author.avatar_url;
     this.info.author.html_url = data.author.html_url;
+    this.element = true;
 
   }
 }
