@@ -43,6 +43,12 @@ a :hover {
   text-decoration: unset;
 }
 
+button:hover {
+  border-radius: 10px;
+  border: solid 0.5px px #f30000;
+  margin-top: 12px;
+}
+
 #contenedor {
   text-align: left;
   width: 100%;

@@ -9,7 +9,7 @@ import { commit } from 'src/app/models/model.commit';
 export class ContentComponent implements OnInit {
   public info = commit;
   public commits: Array<any> = [];
-  element = false;
+  public element = false;
   constructor(private _getCommitService: GetCommitsService) {}
   ngOnInit() {
     this._getCommitService.getCommits().subscribe((response) => {
