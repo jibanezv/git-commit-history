@@ -1,18 +1,18 @@
 <div id="contenedor" class="clearfix">
   <div id="lateral">
-    <h1>Lista</h1>
+    <h1>List</h1>
     <div *ngFor="let data of commits" class="article-item">
       <div>
         <img src="../../../assets/images/commit.png" alt="commit-img" class="image-wrap" />
       </div>
       <h2>{{data.commit.message}}</h2>
       <span class="date">{{data.commit.author.date}}</span>
-      <button (click)="leerMas(data)">Leer más</button>
+      <button (click)="leerMas(data)">Read more</button>
     </div>
   </div>
 
   <div #principal id="principal">
-    <h1>Detalles</h1>
+    <h1>Detail</h1>
     <p><strong>Sha: </strong>{{info.sha}}</p>
     <p><strong>Node ID: </strong>{{info.node_id}}</p>
     <div>

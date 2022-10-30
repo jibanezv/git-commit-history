@@ -4,7 +4,6 @@ import { commit } from 'src/app/models/model.commit';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css'],
   providers: [GetCommitsService],
 })
 export class ContentComponent implements OnInit {
