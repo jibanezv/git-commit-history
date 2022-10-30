@@ -27,6 +27,12 @@ strong {
   font-variant: small-caps;
 }
 
+.h2,
+h2 {
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
 #contenedor {
   text-align: left;
   width: 100%;

@@ -13,7 +13,7 @@
 
   <div class="detail-container">
     <div #principal id="principal" *ngIf="element == true">
-      <h2>Detail</h2>
+      <h2>{{info.commit.message}}</h2>
       <p><strong>Sha: </strong>{{info.sha}}</p>
       <p><strong>Node ID: </strong>{{info.node_id}}</p>
       <div>
@@ -37,7 +37,6 @@
           <li><strong>Date: </strong>{{info.commit.committer.date}}</li>
         </ul>
       </div>
-      <p><strong>Message: </strong>{{info.commit.message}}</p>
       <div>
         <h4><strong>Tree</strong></h4>
         <ul>
